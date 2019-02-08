@@ -13,5 +13,6 @@ void error_flags_should_be_defined_by_default();
 
 int main()
 {
+  printf("OK\n");
   return 0;
 }
