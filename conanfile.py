@@ -4,7 +4,7 @@ from conans import ConanFile, CMake, tools
 
 class ConanPackage(ConanFile):
   name = "nuklear"
-  version = "1.3.0"
+  version = "1.0.0"
   license = "MIT License"
   url = "https://github.com/veyroter/conan-nuklear"
   description = "conan nuklear package"
@@ -70,10 +70,6 @@ class ConanPackage(ConanFile):
 
   def package_info(self):
     self.cpp_info.libs = tools.collect_libs(self)
-    # if self.settings.os != "Linux":
-    #   self.cpp_info.libs = ["nuklear"]
-    # else:
-    #   self.cpp_info.libs = ["libnuklear.a"]
 
   def dir_src(self):
     try:
